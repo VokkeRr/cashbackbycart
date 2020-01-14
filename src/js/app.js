@@ -40,7 +40,4 @@ for (const purchase of purchases) {
 if (cashback > CASHBACK_LIMIT){
     cashback = CASHBACK_LIMIT;
 }
-    console.log(ans);
-console.log(ans1);
-console.log(ans2);
-console.log(ans3);
+    console.log(cashback);
