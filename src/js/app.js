@@ -4,24 +4,24 @@ const ans = 0;
 const ans1 = 0;
 const ans2 = 0;
 const ans3 = 0;
-const regPurPer = 0.01;
-const incPurPer = 0.05;
-const spePurPer = 0.3;
+const REGULAR_CASHBACK_PERCENT = 1;
+const INCREASED_CASHBACK_PERCENT = 5;
+const SPECIAL_CASHBACK_PERCENT = 30;
 
 
 if (categ === 'regular') {
-    ans = sum * regPurPer;
+    ans = sum * REGULAR_CASHBACK_PERCENT;
 }
 if (categ === 'increased') {
-    ans = sum * incPurPer;
+    ans = sum * INCREASED_CASHBACK_PERCENT;
 }
 if (categ === 'special') {
-    ans = sum * spePurPer;
+    ans = sum * SPECIAL_CASHBACK_PERCENT;
 }
-const cashLim = 3000;
+const CASHBACK_LIMIT = 3000;
 
-if (ans > cashLim) {
-    ans = cashLim;
+if (ans > CASHBACK_LIMIT) {
+    ans = CASHBACK_LIMIT;
 }
 console.log(ans);
 
@@ -41,34 +41,34 @@ let obj = {
 
 }
 if (obj.obj1.categ === 'regular') {
-    ans1 = sum * regPurPer;
+    ans1 = sum * REGULAR_CASHBACK_PERCENT;
 }
 if (obj.obj1.categ === 'increased') {
-    ans1 = sum * incPurPer;
+    ans1 = sum * INCREASED_CASHBACK_PERCENT;
 }
 if (obj.obj1.categ === 'special') {
-    ans1 = sum * spePurPer;
+    ans1 = sum * SPECIAL_CASHBACK_PERCENT;
 }
 
 //  if obj 2
 if (obj.obj2.categ === 'regular') {
-    ans2 = sum * regPurPer;
+    ans2 = sum * REGULAR_CASHBACK_PERCENT;
 }
 if (obj.obj2.categ === 'increased') {
-    ans2 = sum * incPurPer;
+    ans2 = sum * INCREASED_CASHBACK_PERCENT;
 }
 if (obj.obj2.categ === 'special') {
-    ans2 = sum * spePurPer;
+    ans2 = sum * SPECIAL_CASHBACK_PERCENT;
 }
 // if obj 3
 if (obj.obj3.categ === 'regular') {
-    ans3 = sum * regPurPer;
+    ans3 = sum * REGULAR_CASHBACK_PERCENT;
 }
 if (obj.obj3.categ === 'increased') {
-    ans3 = sum * incPurPer;
+    ans3 = sum * INCREASED_CASHBACK_PERCENT;
 }
 if (obj.obj3.categ === 'special') {
-    ans3 = sum * spePurPer;
+    ans3 = sum * SPECIAL_CASHBACK_PERCENT;
 }
 
 console.log(ans);
