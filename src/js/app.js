@@ -49,6 +49,7 @@ if (obj.obj1.categ === 'increased') {
 if (obj.obj1.categ === 'special') {
     ans1 = sum * spePurPer;
 }
+
 //  if obj 2
 if (obj.obj2.categ === 'regular') {
     ans2 = sum * regPurPer;
