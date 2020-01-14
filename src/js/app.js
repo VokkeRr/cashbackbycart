@@ -1,5 +1,7 @@
 const sum = 5500;
-let categ = 'special';
+const REGULAR_CATEGORY = 'regular';
+const INCREASED_CATEGORY = 'increased';
+const SPECIAL_CATEGORY = 'special';
 const ans = 0;
 const ans1 = 0;
 const ans2 = 0;
@@ -25,21 +27,23 @@ if (ans > CASHBACK_LIMIT) {
 }
 console.log(ans);
 
-let obj = {
-    obj1: {
-        sum =  3000,
-        categ = 'special',
+const purchases = [
+    {
+        amount: 1000,
+        category: REGULAR_CATEGORY,
     },
-    obj2: {
-        sum = 3500,
-        categ = 'increased',
+    {
+        amount: 1000,
+        category: INCREASED_CATEGORY,
     },
-    obj3: {
-        sum = 4000,
-        categ = 'regular',
-    }
+    {
+        amount: 1000,
+        category: SPECIAL_CATEGORY,
+    },
+];
 
-}
+let cashback = 0;
+
 if (obj.obj1.categ === 'regular') {
     ans1 = sum * REGULAR_CASHBACK_PERCENT;
 }
